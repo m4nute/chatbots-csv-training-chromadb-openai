@@ -42,6 +42,11 @@ To access all /client endpoints, you need to include an `Authorization` header w
 
 Authorization: Bearer <superuser_token>
 
+All the chatbot related endpoints require the same Authorization header, but with the client's token instead of the superuser token.
+To get your client's token, you need to create a client first, and then retrieve it with the /client/{clientId} or /clients endpoints.
+
+Authorization: Bearer <client_token>
+
 ## Endpoints
 
 ### Clear Database
